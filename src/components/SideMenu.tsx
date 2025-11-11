@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 type SideMenuProps = {
@@ -102,14 +102,13 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
           >
             스페이스클라우드 홈
           </Link>
-
-          <Link
-            to="/notice"
-            className="block px-5 py-4 hover:bg-gray-50"
-            onClick={onClose}
-          >
-            공지사항
-          </Link>
+<div className="block px-5 py-4 hover:bg-gray-50">
+          <NavLink to="/notice"> 공지사항</NavLink>
+         </div>
+         
+           
+            
+        
 
           <Link
             to="/help"
