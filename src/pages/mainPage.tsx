@@ -127,7 +127,7 @@ function RoomCard({ room }: { room: Room }) {
         />
         <div className="absolute left-2 top-2 flex gap-1">
           <Badge color="violet">배달가능</Badge>
-          <Badge color="orange">주차가능</Badge>
+          <Badge color="orange">주차가능.</Badge>
         </div>
         <button className="absolute right-2 top-2 rounded-full bg-white/90 p-2 text-gray-700 shadow">♡</button>
       </div>
@@ -146,7 +146,7 @@ function RoomCard({ room }: { room: Room }) {
             <span key={t} className="rounded-md bg-gray-100 px-2 py-0.5">{t}</span>
           ))}
         </div>
-
+ 
         <div className="mt-3 flex items-end justify-between">
           <div className="text-[13px] text-gray-500">
             최저
