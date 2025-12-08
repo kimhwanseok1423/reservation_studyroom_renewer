@@ -1,6 +1,8 @@
 package com.example.reservationapi.service;
 
 
+import com.example.reservationapi.dto.PageRequestDTO;
+import com.example.reservationapi.dto.PageResponseDTO;
 import com.example.reservationapi.dto.TodoDTO;
 
 public interface TodoService {
@@ -11,5 +13,9 @@ public interface TodoService {
     //void return 타입보다는 예외
     void modify(TodoDTO todoDTO);
     void remove(Long tno);
+
+
+    PageResponseDTO<TodoDTO> list(PageRequestDTO pageRequestDTO);
+
 
 }

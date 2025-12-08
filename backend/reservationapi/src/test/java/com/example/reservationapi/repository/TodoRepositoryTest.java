@@ -2,6 +2,9 @@ package com.example.reservationapi.repository;
 
 import com.example.reservationapi.domain.QTodo;
 import com.example.reservationapi.domain.Todo;
+import com.example.reservationapi.dto.PageRequestDTO;
+import com.example.reservationapi.dto.PageResponseDTO;
+import com.example.reservationapi.dto.TodoDTO;
 import com.querydsl.jpa.JPQLQueryFactory;
 import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.Assertions;
@@ -98,6 +101,20 @@ private JPQLQueryFactory queryFactory;
                 .fetch();
 
 log.info(list);
+
+    }
+
+    @Test
+    public void testSearchPaging3() {
+String keyword="11";
+        PageRequestDTO pageRequestDTO=PageRequestDTO.builder().build();
+
+        //TodoRepository의 search
+      PageResponseDTO<TodoDTO> response= todoRepository.search(keyword,pageRequestDTO);
+
+      log.info(response);
+
+
 
     }
 }
