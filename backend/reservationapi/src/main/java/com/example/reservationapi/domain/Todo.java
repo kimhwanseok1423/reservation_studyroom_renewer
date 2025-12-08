@@ -22,11 +22,14 @@ public class Todo {
     private boolean complete;
     private LocalDate dueDate;
 
-    public void setTitle(String updateTitle) {
+    public void setTitle(String title) {
+        this.title=title;
     }
-    public void setComplete(boolean b) {
+    public void setComplete(boolean complete) {
+    this.complete=complete;
     }
 
-    public void setDueDate(LocalDate of) {
+    public void setDueDate(LocalDate dueDate) {
+    this.dueDate=dueDate;
     }
 }

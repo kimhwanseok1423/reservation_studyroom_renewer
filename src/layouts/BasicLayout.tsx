@@ -35,7 +35,7 @@ export default function BasicLayout() {
       <header className="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-gray-100">
         <div className="mx-auto max-w-screen-2xl px-4 py-3 flex items-center gap-3">
           <button className="text-2xl" onClick={() => setMenuOpen(true)}>☰</button>
-          <div className="font-semibold">SpaceCloud.</div>
+          <div className="font-semibold">studyroom</div>
 
           {/* 공통 검색창 */}
           <div className="ml-auto w-full sm:w-[380px] md:w-[480px]">
